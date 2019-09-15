@@ -1,4 +1,3 @@
-
 var MD5 = function (string) {
 
     function RotateLeft(lValue, iShiftBits) {
@@ -230,13 +229,9 @@ setInterval(function(){
             },
             success: function (data) {
                 if(data.trans_result!=null && data.trans_result[0]!=null && data.trans_result[0].dst!=null){
-                    document.getElementsByClassName("volunteer-link")[0].innerText=data.trans_result[0].dst;
+                    document.getElementsByClassName("rc-LikeContent")[0].innerText=data.trans_result[0].dst;
                 }
-                const content=data.trans_result
-                console.log(data);
             }
         });
     }
 },2000)
-
-
